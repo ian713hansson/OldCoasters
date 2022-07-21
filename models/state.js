@@ -1,3 +1,4 @@
+const mongoose = require('mongoose')
 const { Schema } = require('mongoose')
 
 const State = new Schema(
@@ -7,4 +8,5 @@ const State = new Schema(
     { timestamps: true }
 )
 
-module.exports = State
+module.exports = mongoose.model('states', State)
+    

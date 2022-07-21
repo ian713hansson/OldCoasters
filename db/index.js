@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 mongoose
   .connect(
-    'mongodb+srv://alexcampo5:GASEI2022@cluster0.6yptjno.mongodb.net/OldCoasters'
+    'mongodb+srv://ianhansson:i2b434wm1zVaUecC@cluster0.6yptjno.mongodb.net/OldCoasters'
   )
   .then(() => {
     console.log('Successfully connected to MongoDB.')
