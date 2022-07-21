@@ -1,4 +1,4 @@
-const { Coaster, State } = require('./models')
+const { Coaster, State } = require('../models')
 
 const getCoasterById = async (req, res) => {
   try {
