@@ -3,10 +3,10 @@ const CoasterCard = (props) => {
     return (
         <div className="card coaster-card">
             <div className="card-header">
-                <h3>{props.coaster.name}</h3>
+                <h3>I am a coaster</h3>
             </div>
 
-            <div className="img-wrapper">
+            {/* <div className="img-wrapper">
                 <img src={props.coaster.image} alt={props.coaster.name} />
             </div>
 
@@ -18,7 +18,7 @@ const CoasterCard = (props) => {
 
                 </ul>
 
-            </div>
+            </div> */}
 
         </div>
 
