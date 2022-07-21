@@ -1,7 +1,8 @@
-import logo from './logo.svg'
-import './App.css'
-import { Routes, Route } from 'react-router-dom'
-import CoasterCard from './components/CoasterCard'
+import logo from "./logo.svg";
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import CoasterCard from "./components/CoasterCard";
+import StateNav from "./components/StateNav";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         <Route path="/coasters" element={<CoasterCard />} />
       </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
