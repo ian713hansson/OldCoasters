@@ -6,9 +6,15 @@ const findOneState = async () => {
   console.log('state', state)
 }
 
+const getAllCoasters = async (req, res) => {
+  let allCoasters = await Coaster.find()
+  console.log(allCoasters)
+}
+
 const run = async () => {
   try {
-    await findOneState()
+    // await findOneState()
+    await getAllCoasters()
   } catch (error) {
     console.log(error)
   } finally {

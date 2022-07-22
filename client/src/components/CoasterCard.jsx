@@ -14,24 +14,22 @@ const CoasterCard = () => {
 //     )
 //     setCurrentCoaster(chosenCoaster)
 // }, [props.coasters, coasterId])
-//THIS IS WHERE I WOULD PUT MY API CALL
-//      IF I HAD ONE!!!!!
 
-    // const [rollercoasters, setRollercoasters] = useState([])
 
-    // const getRollercoasters = async () => {
-    //     const res = await axios.get(
-    //       'https://data.mongodb-api.com/app/data-spxce/endpoint/data/v1'
-    //     )
-    //     console.log(res.data.results)
-    //     setRollercoasters(res.data.results)
-    //   }
-      
-    //   useEffect(() => {
-    //     getRollercoasters()
-    //   }, [])
-      
-    //   console.log(rollercoasters)
+const [rollercoasters, setRollercoasters] = useState([])
+
+const getRollercoasters = async () => {
+    const res = await axios.get(
+        `http://localhost:3001/62daaf03f437d4b08ac3ac1e`
+    )
+    console.log(res.data.currentCoaster)
+    setRollercoasters(res.data.currentCoaster)
+}
+useEffect(() => {
+    getRollercoasters()
+}, [])
+console.log(rollercoasters)
+
 
 
     // return (

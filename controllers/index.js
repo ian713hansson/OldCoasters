@@ -13,6 +13,15 @@ const getCoasterById = async (req, res) => {
   }
 }
 
+const getAllCoasters = async (req, res) => {
+  try {
+    let allCoasters = await Coaster.find()
+    return res.status(201).json({ allCoasters })
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 const addCoaster = async (req, res) => {
   try {
     const newCoaster = await new Coaster(req.body)
@@ -25,5 +34,6 @@ const addCoaster = async (req, res) => {
 
 module.exports = {
   getCoasterById,
-  addCoaster
+  addCoaster,
+  getAllCoasters
 }

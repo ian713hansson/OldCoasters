@@ -4,8 +4,10 @@ const controllers = require('../controllers')
 
 router.get('/', (req, res) => res.send('This is the home page'))
 
-router.get('./coasters/:id', controllers.getCoasterById)
+router.get('/:id', controllers.getCoasterById)
 
-router.post('./coasters/:id', controllers.addCoaster)
+router.post('/newcoaster/:id', controllers.addCoaster)
+
+router.get('/allcoasters', controllers.getAllCoasters)
 
 module.exports = router
