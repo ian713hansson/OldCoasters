@@ -8,7 +8,7 @@ function App() {
       <h1> React homepage</h1>
 
       <Routes>
-        <Route path="/coasters" element={<CoasterCard />} />
+        <Route path="/coasters/coaster/:id" element={<CoasterCard />} />
         <Route path="/" element={<CoasterCard />} />
       </Routes>
     </div>
