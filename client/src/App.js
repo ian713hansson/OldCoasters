@@ -1,16 +1,20 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import CoasterCard from './components/CoasterCard'
+import { useNavigate } from 'react-router-dom'
+import Header from './components/Header'
+import StateCard from './components/StateCard'
 
 function App() {
   return (
     <div>
-      <h1> React homepage</h1>
-
-      <Routes>
-        <Route path="/coasters/coaster/:id" element={<CoasterCard />} />
-        <Route path="/" element={<CoasterCard />} />
-      </Routes>
+      {/* <Header /> */}
+      <main>
+        <Routes>
+          {/* <Route path="/coasters/:id" element={<CoasterCard />} /> */}
+          <Route path="/" element={<StateCard />} />
+        </Routes>
+      </main>
     </div>
   )
 }
