@@ -4,34 +4,31 @@ import axios from 'axios'
 
 const CoasterCard = (props) => {
 
-    const [selectedCoaster, setCurrentCoaster] = useState(null)
-    const [coasterDetails, setCoasterDetails] = useState(null)
-    let {coasterId} = useParams()
+//     const [selectedCoaster, setCurrentCoaster] = useState(null)
+//     const [coasterDetails, setCoasterDetails] = useState(null)
+//     let {coasterId} = useParams()
 
-useEffect(() => {
-    let chosenCoaster = props.coasters.find((coaster) =>
-        coaster.id === parseInt(coasterId)
+// useEffect(() => {
+//     let chosenCoaster = props.coasters.find((coaster) =>
+//         coaster.id === parseInt(coasterId)
+//     )
+//     setCurrentCoaster(chosenCoaster)
+// }, [props.coasters, coasterId])
+
+
+const [rollercoasters, setRollercoasters] = useState([])
+
+const getRollercoasters = async () => {
+    const res = await axios.get(
+        `http://localhost:3001/62daaf03f437d4b08ac3ac1e`
     )
-    setCurrentCoaster(chosenCoaster)
-}, [props.coasters, coasterId])
-//THIS IS WHERE I WOULD PUT MY API CALL
-//      IF I HAD ONE!!!!!
-
-    // const [rollercoasters, setRollercoasters] = useState([])
-
-    // const getRollercoasters = async () => {
-    //     const res = await axios.get(
-    //       'https://data.mongodb-api.com/app/data-spxce/endpoint/data/v1'
-    //     )
-    //     console.log(res.data.results)
-    //     setRollercoasters(res.data.results)
-    //   }
-      
-    //   useEffect(() => {
-    //     getRollercoasters()
-    //   }, [])
-      
-    //   console.log(rollercoasters)
+    console.log(res.data.currentCoaster)
+    setRollercoasters(res.data.currentCoaster)
+}
+useEffect(() => {
+    getRollercoasters()
+}, [])
+console.log(rollercoasters)
 
 
     return (

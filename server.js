@@ -10,7 +10,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 app.use(logger('dev'))
-app.use('/coaster', routes)
+app.use('/', routes)
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
