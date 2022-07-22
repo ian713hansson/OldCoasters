@@ -12,4 +12,6 @@ router.post('/newcoaster/:id', controllers.addCoaster)
 
 router.get('/allcoasters', controllers.getAllCoasters)
 
+router.get('/states', controllers.getAllStates)
+
 module.exports = router

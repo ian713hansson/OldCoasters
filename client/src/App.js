@@ -11,8 +11,7 @@ function App() {
       {/* <Header /> */}
       <main>
         <Routes>
-          {/* <Route path="/coasters/:id" element={<CoasterCard />} /> */}
-          <Route path="/" element={<StateCard />} />
+          <Route path="/" element={<CoasterCard />} />
         </Routes>
       </main>
     </div>
