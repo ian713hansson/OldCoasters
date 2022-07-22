@@ -1,6 +1,6 @@
 const db = require('../db')
 
-const {RollerCoaster, State} = require('../models')
+const { Coaster, State} = require('../models')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
@@ -196,7 +196,7 @@ const main = async () => {
             description: 'If you can`t hold it, this is the ride for you!',
             image: 'https://rcdb.com/113.htm#',
             review: '',
-            state: illinois[0]._id
+            state: indiana[0]._id
         },
         {
             name: 'Little Coaster',
@@ -242,7 +242,7 @@ const main = async () => {
             topSpeed: '57 mph', 
             dropLength: '110 feet',
             description: 'This big ole drop re-opened after Hurricane Katrina and has been operating since 2005.',
-            image: '',
+            image: 'https://rcdb.com/589.htm#',
             review: '',
             state: louisiana[0]._id
         },
@@ -254,7 +254,7 @@ const main = async () => {
             topSpeed: '55 mph', 
             dropLength: '100 feet',
             description: 'A mythical sword',
-            image: '',
+            image: 'https://rcdb.com/471.htm#',
             review: '',
             state: maine[0]._id
         },
@@ -266,7 +266,7 @@ const main = async () => {
             topSpeed: 'Depends on how heavy the passengers are', 
             dropLength: '5 feet',
             description: 'This thing looks sketchy as hell.',
-            image: '',
+            image: 'https://rcdb.com/20044.htm#',
             review: '',
             state: maryland[0]._id
         },
@@ -278,7 +278,7 @@ const main = async () => {
             topSpeed: '40 mph', 
             dropLength: '70 feet',
             description: 'A wooden coaster which sounds not unlike a thunder crack in the sky',
-            image: '',
+            image: 'https://rcdb.com/182.htm#',
             review: '',
             state: massachusetts[0]._id
         },
@@ -290,7 +290,7 @@ const main = async () => {
             topSpeed: '45 mph', 
             dropLength: '70 feet',
             description: 'Two loops in a row make this an extreme ride for 1979!',
-            image: '',
+            image: 'https://rcdb.com/218.htm#',
             review: '',
             state: michigan[0]._id
         },
@@ -302,7 +302,7 @@ const main = async () => {
             topSpeed: '50 mph', 
             dropLength: '70 feet',
             description: 'This wooden coaster has been getting high since the 70`s',
-            image: '',
+            image: 'https://rcdb.com/117.htm#',
             review: '',
             state: minnesota[0]._id
         },
@@ -314,7 +314,7 @@ const main = async () => {
             topSpeed: 'The speed of a bald eagle', 
             dropLength: 'unavailable',
             description: 'Grab your apple pie folks',
-            image: '',
+            image: 'https://rcdb.com/2619.htm#',
             review: '',
             state: mississippi[0]._id
         },
@@ -326,7 +326,7 @@ const main = async () => {
             topSpeed: '37 mph', 
             dropLength: '41 feet',
             description: 'Runaway train, never coming back, runaway on a runway track',
-            image: '',
+            image: 'https://rcdb.com/125.htm#',
             review: '',
             state: missouri[0]._id
         },
@@ -338,7 +338,7 @@ const main = async () => {
             topSpeed: 'unavailable', 
             dropLength: 'unavailable',
             description: 'Monster Mouse looks like it has taken a few lives',
-            image: '',
+            image: 'https://rcdb.com/4345.htm#',
             review: '',
             state: montana[0]._id
         },
@@ -350,7 +350,7 @@ const main = async () => {
             topSpeed: 'slow', 
             dropLength: 'low',
             description: 'On the backs of gators we go',
-            image: '',
+            image: 'https://rcdb.com/2890.htm#',
             review: '',
             state: nebraska[0]._id
         },
@@ -362,7 +362,7 @@ const main = async () => {
             topSpeed: '41 mph', 
             dropLength: '66 feet',
             description: 'Pink like the mountains surroundig Las Vegas, this coaster comes with a free Baja Blast.',
-            image: '',
+            image: 'https://rcdb.com/104.htm#',
             review: '',
             state: nevada[0]._id
         },
@@ -374,7 +374,7 @@ const main = async () => {
             topSpeed: '50 mph', 
             dropLength: '72 feet',
             description: 'Do you love me?',
-            image: '',
+            image: 'https://rcdb.com/337.htm#',
             review: '',
             state: southCarolina[0]._id
         },
@@ -386,7 +386,7 @@ const main = async () => {
             topSpeed: '35 mph', 
             dropLength: '63.5 feet',
             description: 'Fast like a cannonball headed straight at old Dixie',
-            image: '',
+            image: 'https://rcdb.com/298.htm#',
             review: '',
             state: newHampshire[0]._id
         },
@@ -398,7 +398,7 @@ const main = async () => {
             topSpeed: '38 mph',
             dropLength: '39 feet',
             description: 'If you know, you know...',
-            image: '',
+            image: 'https://rcdb.com/131.htm#',
             review: '',
             state: newJersey[0]._id
         },
@@ -410,7 +410,7 @@ const main = async () => {
             topSpeed: 'unavailable',
             dropLength: 'unavailable',
             description: 'Take a trip to the galaxy, but do not spell it right',
-            image: '',
+            image: 'https://rcdb.com/392.htm#',
             review: '',
             state: newMexico[0]._id
         },
@@ -422,7 +422,7 @@ const main = async () => {
             topSpeed: 'unavailable',
             dropLength: '75 feet',
             description: 'I can only imagine how frightening this ride really is, if you have been there please write a review',
-            image: '',
+            image: 'https://rcdb.com/227.htm#',
             review: '',
             state: newYork[0]._id
         },
@@ -434,7 +434,7 @@ const main = async () => {
             topSpeed: 'unavailable',
             dropLength: 'unavailable',
             description: 'Get your pick ready cuz we are going gold diggin',
-            image: '',
+            image: 'https://rcdb.com/83.htm#',
             review: '',
             state: northCarolina[0]._id
         },
@@ -446,7 +446,7 @@ const main = async () => {
             topSpeed: '',
             dropLength: '',
             description: 'This train`s brakes have broken and it is out of control',
-            image: '',
+            image: 'https://rcdb.com/9060.htm#',
             review: '',
             state: northDakota[0]._id
         },
@@ -458,7 +458,7 @@ const main = async () => {
             topSpeed: 'Well, it`s not the Big Dipper',
             dropLength: '',
             description: 'When you dip, I dip, when we dip we dip we dip',
-            image: '',
+            image: 'https://rcdb.com/635.htm#',
             review: '',
             state: ohio[0]._id
         },
@@ -470,7 +470,7 @@ const main = async () => {
             topSpeed: '',
             dropLength: '',
             description: 'Many children have been permenantly mentally damaged due to the unstable nature of the relationships between the structure of this coaster and the ground it lays upon',
-            image: '',
+            image: 'https://rcdb.com/1765.htm#',
             review: '',
             state: oklahoma[0]._id
         },
@@ -482,9 +482,21 @@ const main = async () => {
             topSpeed: '',
             dropLength: '',
             description: 'Tucked into an enchanted forest, lies a snow covered mountain, upon which you will bobsled down with four happy go lucky Jamaicans',
-            image: '',
+            image: 'https://rcdb.com/238.htm#',
             review: '',
             state: oregon[0]._id
+        },
+        {
+            name: 'Thunderhawk',
+            location: 'Dorney Park & Wildwater Kingdom',
+            dateBuilt: '1924',
+            themeOfRide: 'A mythical hawk who is made of thunder',
+            topSpeed: '45 mph',
+            dropLength: '65 feet',
+            description: 'This writer`s first coaster and it is so much fun, completely unhinged, feels like it is about to fall apart and worth every bit of sweat.',
+            image: 'https://rcdb.com/239.htm#',
+            review: '',
+            state: pennsylvania[0]._id
         },
         {
             name: 'Humpty Dumpty`s Great Fall',
@@ -494,7 +506,7 @@ const main = async () => {
             topSpeed: '',
             dropLength: '',
             description: 'Couldn`t put all those pieces back together again could you',
-            image: '',
+            image: 'https://rcdb.com/12095.htm#',
             review: '',
             state: southDakota[0]._id
         },
@@ -506,7 +518,7 @@ const main = async () => {
             topSpeed: '22 mph',
             dropLength: '22 feet',
             description: 'This is what happens when you cross Dolly Parton',
-            image: '',
+            image: 'https://rcdb.com/501.htm#',
             review: '',
             state: tennessee[0]._id
         },
@@ -518,7 +530,7 @@ const main = async () => {
             topSpeed: '',
             dropLength: '',
             description: 'It is yellow and blue and fun for you',
-            image: '',
+            image: 'https://rcdb.com/256.htm#',
             review: '',
             state: texas[0]._id
         },
@@ -530,7 +542,7 @@ const main = async () => {
             topSpeed: '45 mph',
             dropLength: '62 feet',
             description: 'Old school fun!',
-            image: '',
+            image: 'https://rcdb.com/196.htm#',
             review: '',
             state: utah[0]._id
         },
@@ -542,7 +554,7 @@ const main = async () => {
             topSpeed: '',
             dropLength: '',
             description: 'Mountain coasters are just the best, you control your own speed',
-            image: '',
+            image: 'https://rcdb.com/13318.htm#',
             review: '',
             state: vermont[0]._id
         },
@@ -554,7 +566,7 @@ const main = async () => {
             topSpeed: '35 mph',
             dropLength: '35 feet',
             description: 'Old school and it is baby blue',
-            image: '',
+            image: 'https://rcdb.com/89.htm#',
             review: '',
             state: virginia[0]._id
         },
@@ -566,7 +578,7 @@ const main = async () => {
             topSpeed: '50 mph',
             dropLength: '52 feet',
             description: 'This is just a stone cold classick!',
-            image: '',
+            image: 'https://rcdb.com/257.htm#',
             review: '',
             state: washington[0]._id
         },
@@ -578,7 +590,7 @@ const main = async () => {
             topSpeed: '',
             dropLength: '',
             description: 'You have seen the little dipper, now move over bacon!',
-            image: '',
+            image: 'https://rcdb.com/315.htm#',
             review: '',
             state: westVirginia[0]._id
         },
@@ -590,7 +602,7 @@ const main = async () => {
             topSpeed: '',
             dropLength: '',
             description: 'You are a mouse. Someone has stolen your cheese. You are suitably angry as that cheese was your dinner.',
-            image: '',
+            image: 'https://rcdb.com/330.htm#',
             review: '',
             state: wisconsin[0]._id
         },
@@ -602,13 +614,13 @@ const main = async () => {
             topSpeed: '27 mph',
             dropLength: '',
             description: 'You are a cowboy, now coast',
-            image: '',
+            image: 'https://rcdb.com/13510.htm#',
             review: '',
             state: wyoming[0]._id
         }
     ]
 
-    await RollerCoaster.insertMany(coaster)
+    await Coaster.insertMany(coaster)
     console.log('Made some coasters')
 }
 
