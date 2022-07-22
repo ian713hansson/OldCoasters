@@ -1,4 +1,4 @@
-import StateNav from '.StateNav/'
+import StateCard from "./StateCard"
 
 
 
@@ -10,7 +10,7 @@ export default function Header (props) {
       <section className="state-map-container">
         {props.states.map((currentState) => (
           <div>
-            <StateNav />
+            <StateCard />
           </div>
         ))}
       </section>

@@ -12,6 +12,12 @@ function App() {
         {/* <Route path="/coasters/coaster/:id" element={<CoasterCard />} /> */}
         <Route path="/" element={<CoasterCard />} />
       </Routes>
+      {/* <Header /> */}
+      
+        <Routes>
+          {/* <Route path="/coasters/:id" element={<CoasterCard />} /> */}
+          <Route path="/" element={<StateCard />} />
+        </Routes>
       </main>
     </div>
   )
